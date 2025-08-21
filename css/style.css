@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+  color: #ffffff;
+  padding: 20px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(4px) brightness(0.75);
+  transition: all 0.6s ease-in-out;
+}
+
+#welcome-message {
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#welcome-message h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #00f2ff;
+}
+
+#welcome-message p {
+  font-size: 1.1rem;
+  color: #fcfcfc;
+}
+
+.weather-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideFade 1s ease-out forwards;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-form input {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 180px;
+}
+
+.search-form input:focus {
+  box-shadow: 0 0 6px rgba(42, 125, 225, 0.5);
+  outline: none;
+}
+
+.search-form button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background: #2a7de1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+  background: #175bbf;
+}
+
+
+.mood-visual {
+  text-align: center;
+}
+
+.mood-visual img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.mood-visual img:hover {
+  transform: scale(1.05);
+}
+
+#weather-caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.weather-details {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.weather-details h2 {
+  font-size: 2rem;
+  color: #00f2ff;
+;
+}
+
+.weather-details p {
+  font-size: 1rem;
+  margin: 4px 0;
+}
+
+.quote-section, .recipe-section, .music-section, .forecast-section {
+  padding: 15px;
+  border-radius: 12px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.quote-section {
+  background: #e0f2ff;
+}
+
+.quote-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+#quote {
+  font-style: italic;
+  font-size: 1rem;
+  color: #444444;
+}
+
+.recipe-section {
+  background: #fff4d8;
+}
+
+.recipe-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #d17f00;
+}
+
+#recipe {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.music-section {
+  background: #f2e6ff;
+}
+
+.music-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #8e44ad;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+}
+
+.forecast-section {
+  background: #e8f5e9;
+}
+
+.forecast-section h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.forecast-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forecast-cards .forecast-day {
+  background: #c8e6c9;
+  padding: 10px;
+  flex: 1;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.forecast-cards .forecast-day:hover {
+  transform: translateY(-5px);
+}
+
+.forecast-day img {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-day p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideFade {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .weather-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .forecast-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-cards .forecast-day {
+    width: 100%;
+    max-width: 300px;
+  }
+}

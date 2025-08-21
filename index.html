@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Mood App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Background Image Wrapper -->
+    <div id="background">
+      <img
+        src="assets/backgrounds/sunny_bg.jpg"
+        alt="Background Image"
+      />
+    </div>
+
+    <!-- Weather Mood Container -->
+    <section class="weather-container" style="display: none">
+      <!-- Mood Visual -->
+      <div class="mood-visual">
+        <img
+          id="weather-image"
+          src="assets/mood-images/clear.jpg"
+          alt="Weather Mood Image"
+        />
+        <p id="weather-caption">Clear</p>
+      </div>
+
+      <!-- Weather Info -->
+      <div class="weather-details">
+        <h2 id="city-name">City Name</h2>
+        <p id="weather-type">Clear</p>
+        <p id="temperature">Temperature: 28°C</p>
+        <p id="description">Description: Clear Sky</p>
+      </div>
+
+      <!-- Quote Section --> 
+      <section class="quote-section">
+        <h3>Quote of the Moment</h3>
+        <blockquote id="quote">"Loading quote..."</blockquote>
+      </section>
+
+      <!-- Recipe Section -->
+      <section class="recipe-section">
+        <h3>Perfect Food for This Weather</h3>
+        <p id="recipe">Loading recipe...</p>
+      </section>
+
+      <!-- Music Section -->
+      <section class="music-section">
+        <h3>Vibe Songs</h3>
+        <audio id="audio" controls autoplay>
+          <source src="assets/mood-songs/Clear/clear1.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- 4-Day Forecast -->
+      <section class="forecast-section">
+        <h3>4-Day Forecast</h3>
+        <div id="forecast-cards" class="forecast-cards">
+          <!-- forecast cards will appear here -->
+        </div>
+      </section>
+    </section>
+
+    <!-- Welcome Section -->
+    <div id="welcome-message">
+      <h2>Welcome to Weather Mood App</h2>
+      <p>Enter a city above to explore the mood, music, recipes & more!</p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-wrapper">
+      <form id="weather-form" class="search-form">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/content.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/weatherAPI.js" type="module"></script>
+  </body>
+</html>
