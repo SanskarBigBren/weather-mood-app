@@ -43,8 +43,6 @@ Weather Mood App/
 │ ├── mood-images/
 │ ├── backgrounds/
 │ └── songs/
-
-
 ---
 
 ##  How It Works  
