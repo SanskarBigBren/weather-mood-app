@@ -44,8 +44,8 @@ Weather Mood App/
 ├── assets/  
 │   ├── mood-images/  
 │   ├── backgrounds/  
-│   └── songs/  
-
+│   └── songs/
+``` 
 ---
 
 ##  How It Works  
