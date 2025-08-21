@@ -1,4 +1,4 @@
-#  Weather Mood App  
+# Weather Mood App  
 
 [![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
@@ -9,12 +9,12 @@
 
 A fun and interactive web app that changes **music, quotes, recipes, and background themes** based on the current weather of any searched city.  
 
-##  Live Demo  
+## Live Demo  
  [Click here to try the app](https://sanskarbigbren.github.io/weather-mood-app/)  
 
 ---
 
-##  Features  
+## Features  
 -  Search for any city and get live weather data  
 -  Plays random mood-based songs for each weather  
 -  Shows inspiring quotes depending on the weather  
@@ -24,7 +24,7 @@ A fun and interactive web app that changes **music, quotes, recipes, and backgro
 
 ---
 
-##  Tech Stack  
+## Tech Stack  
 - **HTML5** – structure  
 - **CSS3** – styling & responsiveness  
 - **JavaScript (ES6)** – dynamic logic  
@@ -33,16 +33,19 @@ A fun and interactive web app that changes **music, quotes, recipes, and backgro
 
 ---
 
-##  Project Structure  
-Weather Mood App/
-│── index.html
-│── style.css
-│── script.js
-│── content.js
-│── assets/
-│ ├── mood-images/
-│ ├── backgrounds/
-│ └── songs/
+## Project Structure  
+
+```plaintext
+Weather Mood App/  
+├── index.html  
+├── style.css  
+├── script.js  
+├── content.js  
+├── assets/  
+│   ├── mood-images/  
+│   ├── backgrounds/  
+│   └── songs/  
+
 ---
 
 ##  How It Works  
