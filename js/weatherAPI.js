@@ -1,4 +1,4 @@
-const API_KEY = "819a708a8033e3bec96332dd1df938e1"; // 
+const API_KEY = "819a708a8033e3bec96332dd1df938e1";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/";
 
 // Fetch current weather data
@@ -7,7 +7,7 @@ export async function fetchCurrentWeather(city) {
 
   const res = await fetch(url);
   if (!res.ok) {
-    throw new Error("❌ City not found or API limit reached.");
+    throw new Error("City not found or API limit reached.");
   }
 
   const data = await res.json();
@@ -20,7 +20,7 @@ export async function fetchForecast(city) {
 
   const res = await fetch(url);
   if (!res.ok) {
-    throw new Error("❌ Forecast data not available.");
+    throw new Error("Forecast data not available.");
   }
 
   const data = await res.json();
