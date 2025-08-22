@@ -195,7 +195,7 @@ body {
 }
 
 .music-section {
-  background: #f2e6ff;
+  background: #e8f5e9;
 }
 
 .music-section h3 {
@@ -210,7 +210,7 @@ audio {
 }
 
 .forecast-section {
-  background: #2f302f;
+  background: #e8f5e9;
 }
 
 .forecast-section h3 {
@@ -245,6 +245,7 @@ audio {
 }
 
 .forecast-day p {
+  color: #444444;
   margin: 5px 0;
   font-size: 0.9rem;
 }
