@@ -10,7 +10,7 @@
 A fun and interactive web app that changes **music, quotes, recipes, and background themes** based on the current weather of any searched city.  
 
 ## Live Demo  
- [Click here to try the app](https://sanskarbigbren.github.io/weather-mood-app/)  
+ [Click here to try the app](https://sanskarkurmi.github.io/weather-mood-app/)  
 
 ---
 
